@@ -78,7 +78,7 @@ def tic_tac_toe():
     continue_game = True
 
     def step():
-        global steps
+        nonlocal steps
         next_step = input('Your turn! Write a letter of your step: ')
         for i in range(len(table_grid)):
             if table_grid[i] == next_step:
@@ -93,7 +93,7 @@ def tic_tac_toe():
             print('This is not available. Try again!')
 
     def computer_step():
-        global steps
+        nonlocal steps
         next_comp_step = random.choice(steps)
         for i in range(len(table_grid)):
             if table_grid[i] == next_comp_step:
