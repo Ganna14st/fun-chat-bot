@@ -228,6 +228,7 @@ def hangman():
 
         print(stages[lives])
 
+
 def rock_paper_scissors():
     rock = '''
         _______
@@ -291,7 +292,7 @@ def movie_advice():
     search = row_search.replace(' ', '+')
     link = f'https://www.themoviedb.org/search?query={search}'
     print(f'Please follow this link: {link}')
-    'https://www.themoviedb.org/search?query={search}'
+
 
 while True:
     print()
